@@ -1,6 +1,7 @@
 # Road lane detection Project
 ---
 
+I'm sorry, just after I submitted the project, a nasty bug was discovered in project_video_combined.mp4 since 0:35
 
 ## 1. Getting camera intrinsic parameters
     
