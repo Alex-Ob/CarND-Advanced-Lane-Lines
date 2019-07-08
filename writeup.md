@@ -13,16 +13,23 @@ The goals / steps of this project are the following:
 
 ### Image References
 
-![One of the calibration set of chessboard images] (camera_cal/calibration2.jpg) Calibration
-![Pair of original/undistorted chessfields] (/examples/undistort_chessboard_2.png) "Undistorted chessboard"
-![Pair of original/undistorted frames] (./examples/undistorted.png) "Undistorted videoframe"
-![Warped&Binarized] (./examples/unwarped&binarized.png) "Example of perspective transforms and binarization"
-![Lane tracking] (./examples/project_video_tracking.png) "Tracking via polynomial approximation"
-![Orig&marked] (./examples/hard_out.png) "Pair of source/marked images"
+![One of the calibration set of chessboard images](camera_cal/calibration2.jpg) Calibration
 
-![input video] (./project_video.mp4) "Source video"
-![binarized video] (./project_video_binarized.mp4) "Binarized video"
-![output video] (./project_video_output.mp4) "Marked video"
+![Pair of original/undistorted chessfields](examples/undistort_chessboard_2.png) Undistorted chessboard
+
+![Pair of original/undistorted frames](examples/undistorted.png) Undistorted videoframe
+
+![Warped and Binarized](examples/unwarped&binarized.png) Example of perspective transforms and binarization
+
+![Lane tracking](examples/project_video_tracking.png) Tracking via polynomial approximation
+
+![Orig&marked](examples/hard_out.png) Pair of source/marked images
+
+Input video: **project_video.mp4**
+
+Binarized video: **project_video_binarized.mp4**
+
+Output video: **project_video_output.mp4**
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -128,10 +135,7 @@ Here's a [link to my video result](./project_video.mp4)
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 =======
-# Road lane detection Project
----
 
-I'm sorry, just after I submitted the project, a nasty bug was discovered in project_video_combined.mp4 since 0:35
 
 ## 1. Getting camera intrinsic parameters
     
