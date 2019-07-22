@@ -135,6 +135,6 @@ All of the images presented here were produced by running JupiterNotebook file i
 
 ### Discussion
 
-There are two main problems I have encountered.
-The first is some jitter in the right-hand side of the road, which is especially noticeable when the car goes out of the light-filled sections of the road (at 0: 24 and 0: 41).
-The second problem is a wrong curvature calculation.
+The two main problems I have encountered still remain, by and large.
+The first is a slight tremor of the lines, which is especially noticeable when the car leaves the illuminated sections of the road (at 0: 24 and 0: 41). This is due to the disappearing of lines after binarization.
+The second problem is the calculation of curvature. This is a derivative parameter, that is, it depends on the correctness of the lines detection and approximation, but in principle can be smoothed with filters like Kalman.
