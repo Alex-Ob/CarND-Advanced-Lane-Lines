@@ -104,6 +104,9 @@ It is placed in "Lane tracking" and "Incremental search" cells of JupiterNoteboo
 
 I only modified histogram calculation (applied the smoothing with 3-pixels window) and divided lane into 3 segments (excluding central part). A think it may be useful to avoid of unnecessary noise/artifacts.
 
+Also I modified the algorithm of a detection so that while one of two lines isn't able to detect, its position is defined by other line with account for the distance between them.
+If both lines are not detected, the polynomial coefficients stay unchanged.
+
 This is the result of applying the lane detection method to the previous test image
 
 ![alt text](output_images/project_video_tracking.png)
@@ -111,10 +114,6 @@ This is the result of applying the lane detection method to the previous test im
 #### Calculation of the radius of curvature and the position of the vehicle
 
 This section follows the heading "The radius of curvature and offset calculation".
-
-At the moment I have got a problem. I have tried different versions of the calculation formulas, including those suggested by students, but they all give the same result: the radius of curvature is infinite.
-
-It may be due to wrong scaling.
 
 The final result of the all stages is shown in a cell follows the "The full processing of a single frame" header.
 I use the function prepare_frame_full() which receives source RGB-image and generates augmented image with lanes marked.
